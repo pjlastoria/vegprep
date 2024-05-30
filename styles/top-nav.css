@@ -1,0 +1,56 @@
+.top-nav {
+    width: 100%;
+    height: 80px;
+    background-color: var(--main-light-color);
+    position: relative;
+    top: 0;
+    z-index: 5;
+}
+
+.inner-nav {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-wrapper, .log-btn-wrapper {
+    width: 200px;
+}
+
+.logo-wrapper {
+    display: flex;
+}
+
+.logo-wrapper img {
+    align-self: center;
+    height: 50px;
+}
+
+.nav-links-wrapper {
+    
+}
+
+.nav-links {
+    font-weight: bold;
+    align-items: center;
+    gap: 24px;
+    border: solid 1px;
+}
+
+.log-btn-wrapper button {
+    height: 52px;
+    width: 98px;
+    font-size: 14px;
+    font-weight: bold;
+    float: right;
+}
+
+/* ONBOARDING TOP NAV */
+
+.nav-tab-divider {
+    width: 16px;
+    height: 4px;
+    background-color: black;
+}

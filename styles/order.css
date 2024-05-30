@@ -1,0 +1,176 @@
+.order-section {
+    display: flex;
+    border: none;
+}
+
+.address-wrapper, .summary-wrapper {
+    padding: 20px 20px 0;
+}
+
+.order-section h2, .address {
+    margin: 0;
+    text-align: left;
+}
+
+.address-wrapper {
+    width: 66.66%;
+}
+
+.address form {
+    border-radius: 0 20px 0 20px;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fff;
+    box-shadow: 0 15px 15px 1px rgba(12, 76, 53, .1);
+}
+
+.address input[type="text"] {
+    display: flex;
+    width: 100%;
+}
+
+.input-row,
+.input-wrapper,
+.input-wrapper input, select {
+    display: flex;
+}
+
+.col-2, .col-3 {
+    gap: 20px;
+}
+
+.input-row {
+    justify-content: space-between;
+    box-sizing: none;
+}
+
+.input-wrapper {
+    flex-direction: column;
+    box-sizing: none;
+    width: 100%;
+    padding: 0;
+}
+
+.input-wrapper label {
+    margin-top: 5px;
+}
+
+.input-wrapper input {
+    margin: 0;
+}
+
+.summary-wrapper {
+    width: 33.33%;
+    position: relative;
+}
+
+.summary {
+    box-shadow: 0 15px 15px 1px rgba(12, 76, 53, .1);
+    border-radius: 0 20px 0 20px;
+    border: solid 2px var(--color-primary);
+}
+
+.summary img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    display: block;
+}
+
+.summary-plan {
+    background-color: var(--color-complimentary);
+    min-height: 100px;
+    border-radius: 0 20px 0 20px;
+    padding: 10px;
+}
+
+.summary-plan-title {
+    margin: 0 0 12px;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+.summary-meal-plan, .item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    min-height: 100px;
+}
+
+.meal-plan-type, .item-qty {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+}
+
+.summary-meal-imgs {
+    display: flex;
+    align-items: center;
+}
+
+.summary-meal-imgs img {
+    margin-right: -40px;
+    border: 2px solid var(--color-primary);
+    transform: rotate(15deg);
+}
+
+.summary-items {
+    padding: 10px;
+    max-height: 344px;
+    position: relative;
+    flex-direction: column;
+    border-radius: 0 20px 0 20px;
+    
+}
+
+/* if there are more than 3 summary items add scroll */
+.summary-items:has(:nth-child(4)) {
+    overflow-y: scroll;
+}
+
+.item-img img {
+    width: 80px;
+    height: 80px;
+}
+
+.item-text {
+    display: block;
+    font-size: 16px;
+    width: 75%;
+    color: rgb(0, 0, 0, 0.8);
+    text-align: left;
+}
+
+.item-text b, .total-name {
+    font-size: 18px;
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+.checkout-divider {
+    margin: 32px 40px 24px;
+    border-radius: 2px;
+    border: solid 1px rgb(156, 163, 175, 0.2);
+}
+
+.checkout-totals {
+    display: block;
+}
+
+.checkout-totals li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.total-cost {
+    font-weight: bolder;
+}
+
+.checkout-btn {
+    position: relative;
+    margin: 10px auto;
+}

@@ -1,0 +1,104 @@
+#delivery {
+    padding: 0 100px 100px;
+    text-align: center;
+}
+
+#delivery header {
+    position: relative;
+}
+
+#delivery header img {
+    position: absolute;
+}
+
+#delivery header img:nth-child(1) {
+    top: -20px;
+    left: -70px;
+}
+
+#delivery header img:nth-child(2) {
+    top: 30px;
+    right: 0;
+}
+
+#delivery h1 {
+    font-size: 40px;
+    padding: 25px 0;
+    margin: 10px 0 0;
+    text-align: center;
+    background-color: var(--color-primary);
+    border-radius: 50px 0 50px 0;
+    color: white;
+}
+
+#delivery > img {
+    display: block;
+    margin: 40px auto 0;
+}
+
+#delivery h2 {
+    font-size: 32px;
+    padding:0;
+    margin: 0;
+    color: var(--color-primary);
+}
+
+#delivery p {
+    padding:0;
+    margin: 0;
+}
+
+.delivery-days {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 50px 0;
+    gap: 20px;
+}
+
+.delivery-days ul {
+    display: unset;
+    text-align: center;
+    padding: 10px;
+}
+
+.delivery-day {
+    width: 20%;
+    font-size: 18px;
+    padding: 50px;
+    box-shadow: 0 0 10px 1px rgba(12, 76, 53, .1);
+    border-radius: 20px;
+    transition: 0.4s;
+    background-color: #fff;
+}
+
+.delivery-day:hover, .active-day {
+    color: #fff;
+    background-color: var(--color-primary);
+    cursor: pointer;
+}
+
+.delivery-month {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.delivery-cta {
+    border: none;
+    width: 137px;
+    height: 52px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.4s;
+    color: #fff;
+    margin: 50px 10px 0;
+}
+
+.meals-heading {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#delivery #recipes-grid {
+    margin: 50px;
+}

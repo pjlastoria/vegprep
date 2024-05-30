@@ -1,0 +1,127 @@
+:root {
+    --color-primary: #daa520;
+    --color-complimentary: #f1dfb3;
+    --color-text-primary: #0c4c35;
+    --color-text-complimentary: #9ca3af;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-text-primary);
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito';
+    font-size: 16px;
+}
+
+#app {
+    margin: 30px auto;
+    padding: 0;
+    max-width: 1440px;
+    border-radius: 20px;
+    background-color: #fff;
+    z-index: 5;
+    overflow: hidden;
+    position: relative;
+}
+
+section, .top-nav {
+    padding: 0 100px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text-primary);
+    transition: 0.4s;
+}
+
+a:hover {
+    color: var(--color-primary);
+}
+
+u {
+    margin-bottom: 10px;
+}
+
+button, input[type="button"], input[type="submit"] {
+    cursor: pointer;
+    background-color: var(--color-primary);
+}
+
+.leaf-border {
+    border-radius: 0 20px 0 20px;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+}
+
+input, select {
+    border-radius: 0 20px 0 20px;
+    border: solid 2px var(--color-primary);
+    padding: 12px 20px;
+}
+
+select {
+    color: var(--color-text-complimentary);
+    background-color: var(--color-complimentary);
+}
+
+input:focus {
+    outline: none;
+    background-color: var(--color-complimentary);
+}
+
+input[type="text"] {
+    text-indent: 5px;
+}
+
+input[type="radio"], .radio-label {
+    cursor: pointer;
+}
+
+input[type="button"] {
+    margin-left: -25px;
+    color: white;
+    transition: 0.4s;
+    box-shadow: 0 15px 15px 8px rgba(12, 76, 53, .1);
+}
+
+input[type="button"]:hover {
+    color: var(--color-text-primary);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-text-complimentary); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-text-primary); 
+  }

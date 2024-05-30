@@ -1,0 +1,145 @@
+#hero {
+    margin-top: 95px;
+    z-index: 6;
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#hero > * {
+    
+    
+}
+
+.hero-left {
+    width: 50%;
+}
+
+.hero-text-wrapper {
+
+}
+
+.hero-headline {
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 80px;
+    color: var(--color-primary);
+    margin: 20px 0;
+}
+
+#hero-form {
+
+}
+
+#hero-form > input[type="text"] {
+    width: 400px;
+}
+
+.hero-disclaimer {
+    font-size: 14px;
+    color: gray;
+}
+
+.hero-benefit-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.hero-benefit {
+    display: flex;
+    position: relative;
+    gap: 10px;
+    width: 50%;
+    padding: 15px;
+    background-color: rgb(12, 76, 53, 0.2);
+    box-shadow: 0 2px 12px 2px rgba(12, 76, 53, .1);
+    transition: 1s;
+}
+
+.hero-benefit:hover {
+    background-color: var(--color-text-primary);
+    box-shadow: 0 2px 12px 2px rgba(12, 76, 53, .7);
+    color: #fff;
+    cursor: pointer;
+}
+
+.hero-benefit > * {
+    width: 50%;
+}
+
+.benefit-img {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    background-color: #fff;
+}
+
+.benefit-img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.benefit-text {
+    margin: auto;
+}
+
+.benefit-text > * {
+    margin: 0;
+}
+
+/*right side*/
+
+.hero-right {
+    width: 50%;
+    position: relative;
+}
+
+.bg-rect { /*460px, 65px offset*/
+    position: absolute;
+    top: -65px;
+    right: -460px;
+    width: 847px;
+    height: 1035px;
+    background-color: var(--color-primary);
+    z-index: 2;
+    border-radius: 0 180px;
+}
+
+/*hero images*/
+
+.hero-right img {
+    position: absolute;
+    z-index: 2;
+}
+
+#hero-img {
+    position: relative;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#bg-parsley-leaf {
+    top: -20px;
+    left: -100px;
+}
+
+#bg-tomato-vine {
+    top: -180px;
+    right: -90px;
+}
+
+#bg-chili-pepper {
+    bottom: -130px;
+    left: 0;
+}
+
+#bg-tomato-slice {
+    bottom: 70px;
+    right: -80px;
+}

@@ -1,0 +1,113 @@
+#our-story {
+    padding-top: 180px;
+    
+}
+
+.story-wrapper {
+    position: relative;
+    display: flex;
+    gap: 60px;
+}
+
+.bg-leaf {
+    position: absolute;
+    z-index: -1;
+}
+
+.top-leaf {
+    top: -80px;
+    left: -100px; 
+}
+
+.bottom-leaf {
+    bottom: -80px;
+    right: calc(50% - 100px); 
+}
+
+.story-half {
+    width: 50%;
+    
+    
+}
+
+.story-image-wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.top-imgs {
+    align-items: flex-end;
+}
+
+.bottom-imgs {
+    margin-top: 10px;
+}
+
+.story-image-wrapper div img {
+    object-fit: cover;
+}
+
+.story-img-holder-lg { /*337, 400*/
+    height: 340px;
+    width: 59%;
+    border-radius: 0 70px 0 70px;
+}
+.story-img-holder-sm { /*232, 276*/
+    height: 232px;
+    width: 41%;
+    border-radius: 70px 0 70px 0;
+    
+}
+
+.story-img-holder-lg img { /*232, 276*/ 
+    border-radius: 0 70px 0 70px;
+}
+
+.story-img-holder-sm img { /*232, 276*/ 
+    border-radius: 70px 0 70px 0;
+}
+
+.story-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.story-text {
+    margin: auto;
+}
+
+.story-heading-cursive {
+    font-family: 'Great Vibes';
+    font-weight: 100;
+    color: var(--color-primary);
+    font-size: 48px;
+    margin: 0;
+}
+
+.story-heading-lg {
+    color: var(--color-primary);
+    font-size: 60px;
+    margin: 10px 0;
+}
+
+.story-heading {
+    font-size: 30px;
+    margin: 0;
+}
+
+.story-cta {
+    border: none;
+    width: 137px;
+    height: 52px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.4s;
+    color: #fff;
+    box-shadow: 0 15px 15px 8px rgba(12, 76, 53, .1);
+}
+
+.story-cta:hover {
+    color: var(--color-text-primary);
+    box-shadow: 0 15px 15px 8px rgba(12, 76, 53, .3);
+}
